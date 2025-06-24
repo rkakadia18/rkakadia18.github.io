@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 
 import IMG_7240 from "@assets/IMG_7240.jpg";
 
+import IMG_7241 from "@assets/IMG_7241.jpg";
+
 export function AboutSection() {
   const [activeTab, setActiveTab] = useState<"professional" | "personal">("professional");
 
@@ -68,7 +70,7 @@ export function AboutSection() {
             className="order-1"
           >
             <img
-              src={IMG_7240}
+              src={IMG_7241}
               alt={`Rupali Kakadia ${activeTab} photo`}
               className="w-80 h-96 rounded-2xl object-cover shadow-xl mx-auto"
             />
