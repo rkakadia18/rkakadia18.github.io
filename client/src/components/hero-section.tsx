@@ -28,9 +28,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 3.5, duration: 0.8 }}
-        >
-          Data Scientist & Analytics Expert
-        </motion.p>
+        >Data Analysis | Business Intelligence | Supply Chain</motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
