@@ -2,25 +2,20 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
-import IMG_7240 from "@assets/IMG_7240.jpg";
-
-import IMG_7241 from "@assets/IMG_7241.jpg";
-
 export function AboutSection() {
   const [activeTab, setActiveTab] = useState<"professional" | "personal">("professional");
 
   const professionalContent = {
     text: [
-      "Hello! I am Rupali, I like solving problems, asking the right questions and learning new things. Originally from Mumbai and now navigating life in the U.S., I’ve built my career at the intersection of supply chain, optimization, and strategy.", 
-      "I’m currently wrapping up my Master’s in Business Analytics at Purdue University, where I’ve explored all things data — from predictive modeling to analytics strategy — to help businesses make smarter, faster decisions. Along the way, I’ve picked up hands-on skills in Python, SQL, MongoDB, Tableau, SparkQL, Hadoop, and various machine learning techniques."
-    
+      "Hello! I am Rupali, I like solving problems, asking the right questions and learning new things. Originally from Mumbai and now navigating life in the U.S., I've built my career at the intersection of supply chain, optimization, and strategy.", 
+      "I'm currently wrapping up my Master's in Business Analytics at Purdue University, where I've explored all things data — from predictive modeling to analytics strategy — to help businesses make smarter, faster decisions. Along the way, I've picked up hands-on skills in Python, SQL, MongoDB, Tableau, SparkQL, Hadoop, and various machine learning techniques."
     ],
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=400"
   };
 
   const personalContent = {
     text: [
-      "Outside of work, I enjoy adventures, currently I’m working towards my private pilot license. I also blog on Medium about unique business models and economy trends that impact industries. Apart from that, I love playing card/board games, reading, running and watching Bollywood movies"
+      "Outside of work, I enjoy adventures, currently I'm working towards my private pilot license. I also blog on Medium about unique business models and economy trends that impact industries. Apart from that, I love playing card/board games, reading, running and watching Bollywood movies"
     ],
     image: "/attached_assets/IMG_7241_1750797562767.jpg"
   };
@@ -70,7 +65,7 @@ export function AboutSection() {
             className="order-1"
           >
             <img
-              src={IMG_7241}
+              src={activeContent.image}
               alt={`Rupali Kakadia ${activeTab} photo`}
               className="w-80 h-96 rounded-2xl object-cover shadow-xl mx-auto"
             />
