@@ -22,7 +22,7 @@ export function AboutSection() {
     text: [
       "Outside of work, I enjoy adventures, currently I’m working towards my private pilot license. I also blog on Medium about unique business models and economy trends that impact industries. Apart from that, I love playing card/board games, reading, running and watching Bollywood movies"
     ],
-    image: "https://i.postimg.cc/Jz9vc6MD/IMG-7241.jpg?v=" + Date.now()
+    image: "/attached_assets/IMG_7241_1750797562767.jpg"
   };
 
   const activeContent = activeTab === "professional" ? professionalContent : personalContent;
