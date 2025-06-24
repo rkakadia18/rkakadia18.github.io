@@ -12,14 +12,14 @@ export function AboutSection() {
       "Hello! I am Rupali, I like solving problems, asking the right questions and learning new things. Originally from Mumbai and now navigating life in the U.S., I've built my career at the intersection of supply chain, optimization, and strategy.", 
       "I'm currently wrapping up my Master's in Business Analytics at Purdue University, where I've explored all things data — from predictive modeling to analytics strategy — to help businesses make smarter, faster decisions. Along the way, I've picked up hands-on skills in Python, SQL, MongoDB, Tableau, SparkQL, Hadoop, and various machine learning techniques."
     ],
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=400"
+    image: "https://i.postimg.cc/9QVLBrk2/IMG-7240.jpg"
   };
 
   const personalContent = {
     text: [
       "Outside of work, I enjoy adventures, currently I'm working towards my private pilot license. I also blog on Medium about unique business models and economy trends that impact industries. Apart from that, I love playing card/board games, reading, running and watching Bollywood movies"
     ],
-    image: "/attached_assets/IMG_7241_1750798107232.jpg"
+    image: "https://i.postimg.cc/Jz9vc6MD/IMG-7241.jpg"
   };
 
   const activeContent = activeTab === "professional" ? professionalContent : personalContent;

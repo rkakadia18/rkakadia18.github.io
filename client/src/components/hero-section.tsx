@@ -6,7 +6,7 @@ export function HeroSection() {
     <section className="min-h-screen flex items-center justify-center theme-transition bg-background">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <motion.img
-          src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
+          src="/attached_assets/IMG_6134_1750799026564.jpg"
           alt="Rupali Kakadia professional headshot"
           className="w-64 h-64 rounded-full mx-auto mb-8 object-cover shadow-2xl"
           initial={{ opacity: 0, scale: 0.5 }}
