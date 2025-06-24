@@ -67,7 +67,7 @@ export function AboutSection() {
             className="order-1"
           >
             <img
-              src={IMG_7241}
+              src={activeContent.image}
               alt={`Rupali Kakadia ${activeTab} photo`}
               className="w-80 h-96 rounded-2xl object-cover shadow-xl mx-auto"
             />
