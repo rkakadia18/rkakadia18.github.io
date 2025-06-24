@@ -2,13 +2,6 @@ import { useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { MapPin, Calendar } from "lucide-react";
 
-import purdue from "@assets/purdue_1750805573027.png";
-import wabash from "@assets/wabash_1750805607483.png";
-import catLogo from "@assets/CAT-logo_1750805658397.png";
-import kayra from "@assets/kayra.png";
-
-
-
 export function ExperienceSection() {
   const experiences = [
     {
@@ -18,7 +11,7 @@ export function ExperienceSection() {
       location: "West Lafayette, IN",
       date: "August 2024 - Now",
       description: "Cleaned and transformed large-scale financial data from Compustat using Python to support capital structure research. Digged into how companies make real-world decisions about debt and financing.",
-      logo: "https://i.postimg.cc/WpJfnR52/purdue.png",
+      logo: "/attached_assets/purdue_1750805573027.png",
       side: "left"
     },
     {
@@ -28,7 +21,7 @@ export function ExperienceSection() {
       location: "West Lafayette, IN",
       date: "Jan 2025 - May 2025",
       description: "Built a data-driven forecasting model that improved trailer placement accuracy across 30 cities and boosted efficiency by 18%. Optimized the relocation of 360 trailers, minimizing total travel distance to 7,500 miles using linear programming. Developed a real-time trailer allocation platform integrating live weather, Google Maps, and telematics data, cutting travel costs by 23%.",
-      logo: "https://i.postimg.cc/jjFZHvNw/wabash.png",
+      logo: "/attached_assets/wabash_1750805607483.png",
       side: "right"
     },
     {
@@ -38,7 +31,7 @@ export function ExperienceSection() {
       location: "Peoria, IL",
       date: "2023 Summer",
       description: "Designed monthly Sales Variance reports in Tableau and Excel to track KPIs and analyze budget alignment across regions. Built an interactive Power BI dashboard that automated feedback loops for a training program, improving manager responsiveness by 20%. Supported logistics and reporting for a 500-attendee dealer event, ensuring smooth coordination and cross-functional execution.",
-      logo: "https://i.postimg.cc/Jz8g0TcR/CAT-logo.png",
+      logo: "/attached_assets/CAT-logo_1750805658397.png",
       side: "left"
     },
     {
@@ -48,7 +41,7 @@ export function ExperienceSection() {
       location: "New York, NY",
       date: "2022 Summer",
       description: "Executed go-to-market strategy during global exhibitions, driving a 15% improvement in client relationships and customer service. Developed an automated CRM system using Python and WhatsApp, boosting outreach by 25%. Created a targeted outreach strategy that added 9 new B2B accounts and managed inventory using SAP MM.",
-      logo: kayra,
+      logo: "/attached_assets/kayra.png",
       side: "right"
     }
   ];
@@ -59,11 +52,11 @@ export function ExperienceSection() {
         <h2 className="text-4xl font-bold text-center mb-16 text-yellow-400 dark:text-yellow-400">
           Work Experience
         </h2>
-
+        
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-yellow-400 dark:bg-yellow-400" />
-
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-yellow-400 to-yellow-600" />
+          
           {experiences.map((experience, index) => (
             <TimelineItem key={experience.id} experience={experience} index={index} />
           ))}
@@ -80,16 +73,17 @@ function TimelineItem({ experience, index }: { experience: any; index: number })
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 50 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+      className="relative flex items-center mb-16"
+      initial={{ opacity: 0 }}
+      animate={isInView ? { opacity: 1 } : { opacity: 0 }}
       transition={{ duration: 0.6, delay: index * 0.2 }}
-      className="timeline-item flex items-center mb-16 relative"
     >
       {/* Timeline dot */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-yellow-400 border-4 border-background dark:bg-yellow-400 dark:border-background z-10" />
+      <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-yellow-400 rounded-full border-4 border-background z-10" />
+      
       {experience.side === "left" ? (
         <>
-          <div className="w-1/2 pr-8 text-right">
+          <div className="w-1/2 pr-8">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
@@ -97,19 +91,19 @@ function TimelineItem({ experience, index }: { experience: any; index: number })
               className="border rounded-lg p-6 shadow-lg theme-transition bg-card"
             >
               <div className="flex items-center justify-end mb-4">
-                <img
-                  src={purdue}
-                  alt={`${experience.company} logo`}
-                  className="w-12 h-12 rounded-lg mr-4 object-cover"
-                />
-                <div>
+                <div className="text-right mr-4">
                   <h3 className="text-xl font-semibold text-yellow-400 dark:text-yellow-400">
                     {experience.title}
                   </h3>
                   <p className="opacity-75">{experience.company}</p>
                 </div>
+                <img
+                  src={experience.logo}
+                  alt={`${experience.company} logo`}
+                  className="w-12 h-12 rounded-lg object-cover"
+                />
               </div>
-              <p className="mb-4 theme-transition text-left">{experience.description}</p>
+              <p className="mb-4 theme-transition text-center">{experience.description}</p>
               <div className="flex items-center justify-end text-sm opacity-75 space-x-4">
                 <div className="flex items-center">
                   <MapPin className="w-4 h-4 mr-1" />
@@ -136,7 +130,7 @@ function TimelineItem({ experience, index }: { experience: any; index: number })
             >
               <div className="flex items-center mb-4">
                 <img
-                  src={kayra}
+                  src={experience.logo}
                   alt={`${experience.company} logo`}
                   className="w-12 h-12 rounded-lg mr-4 object-cover"
                 />
