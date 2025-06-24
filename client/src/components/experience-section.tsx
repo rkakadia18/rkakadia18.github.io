@@ -9,7 +9,7 @@ export function ExperienceSection() {
       title: "Logistics Data Analyst Intern",
       company: "Tesla",
       location: "West Lafayette, IN",
-      date: "2023 Spring",
+      date: "August 2024 - Now",
       description: "Cleaned and transformed large-scale financial data from Compustat using Python to support capital structure research. Digged into how companies make real-world decisions about debt and financing.",
       logo: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=50&h=50",
       side: "left"
@@ -100,7 +100,7 @@ function TimelineItem({ experience, index }: { experience: any; index: number })
                 </div>
                 <div className="flex items-center">
                   <Calendar className="w-4 h-4 mr-1" />
-                  <span>{experience.date}</span>
+                  <span className="text-right">{experience.date}</span>
                 </div>
               </div>
             </motion.div>
