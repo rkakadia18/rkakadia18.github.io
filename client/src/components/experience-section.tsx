@@ -16,23 +16,32 @@ export function ExperienceSection() {
     },
     {
       id: 2,
-      title: "Logistics Engineering Intern",
-      company: "Penske Logistics (3PL for Starbucks)",
-      location: "Seattle, WA",
-      date: "2022",
-      description: "Optimized warehouse operations and improved order picking efficiency",
+      title: "Data Analyst",
+      company: "Wabash",
+      location: "West Lafayette, IN",
+      date: "Jan 2025 - May 2025",
+      description: "Built a data-driven forecasting model that improved trailer placement accuracy across 30 cities and boosted efficiency by 18%. Optimized the relocation of 360 trailers, minimizing total travel distance to 7,500 miles using linear programming. Developed a real-time trailer allocation platform integrating live weather, Google Maps, and telematics data, cutting travel costs by 23%.",
       logo: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=50&h=50",
       side: "right"
     },
     {
       id: 3,
-      title: "Technical Program Management Intern",
-      company: "Microsoft",
-      location: "Redmond, WA",
+      title: "Business Operations Intern",
+      company: "Caterpillar",
+      location: "Peoria, IL",
       date: "2023 Summer",
-      description: "Learned Hardware Testing procedures and coordinated Hardware Test Management for Azure",
+      description: "Designed monthly Sales Variance reports in Tableau and Excel to track KPIs and analyze budget alignment across regions. Built an interactive Power BI dashboard that automated feedback loops for a training program, improving manager responsiveness by 20%. Supported logistics and reporting for a 500-attendee dealer event, ensuring smooth coordination and cross-functional execution.",
       logo: "https://images.unsplash.com/photo-1633419461186-7d40a38105ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=50&h=50",
       side: "left"
+    },
+    {
+      id: 4,
+      title: "Business Analyst Intern",
+      company: "Kayra Creation",
+      location: "New York, NY",
+      date: "2022 Summer",
+      description: "Executed go-to-market strategy during global exhibitions, driving a 15% improvement in client relationships and customer service. Developed an automated CRM system using Python and WhatsApp, boosting outreach by 25%. Created a targeted outreach strategy that added 9 new B2B accounts and managed inventory using SAP MM.",
+      logo: "https://images.unsplash.com/photo-1633419461186-7d40a38105ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=50&h=50",
     }
   ];
 
@@ -92,7 +101,7 @@ function TimelineItem({ experience, index }: { experience: any; index: number })
                   <p className="opacity-75">{experience.company}</p>
                 </div>
               </div>
-              <p className="mb-4 theme-transition text-center">{experience.description}</p>
+              <p className="mb-4 theme-transition text-left">{experience.description}</p>
               <div className="flex items-center justify-end text-sm opacity-75 space-x-4">
                 <div className="flex items-center">
                   <MapPin className="w-4 h-4 mr-1" />
