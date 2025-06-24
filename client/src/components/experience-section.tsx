@@ -3,8 +3,12 @@ import { motion, useInView } from "framer-motion";
 import { MapPin, Calendar } from "lucide-react";
 
 import purdue from "@assets/purdue.png";
-import wabash from "@assets/wabash.png"; 
+import wabash from "@assets/wabash.png";
 import catLogo from "@assets/CAT-logo_1750805045851.png";
+
+
+
+import kayra from "@assets/kayra.png";
 
 
 
@@ -135,7 +139,7 @@ function TimelineItem({ experience, index }: { experience: any; index: number })
             >
               <div className="flex items-center mb-4">
                 <img
-                  src={wabash}
+                  src={kayra}
                   alt={`${experience.company} logo`}
                   className="w-12 h-12 rounded-lg mr-4 object-cover"
                 />
