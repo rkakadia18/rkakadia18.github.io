@@ -35,7 +35,7 @@ export function ExperienceSection() {
       location: "Peoria, IL",
       date: "2023 Summer",
       description: "Designed monthly Sales Variance reports in Tableau and Excel to track KPIs and analyze budget alignment across regions. Built an interactive Power BI dashboard that automated feedback loops for a training program, improving manager responsiveness by 20%. Supported logistics and reporting for a 500-attendee dealer event, ensuring smooth coordination and cross-functional execution.",
-      logo: "https://images.unsplash.com/photo-1633419461186-7d40a38105ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=50&h=50",
+      logo: "https://i.postimg.cc/Jz8g0TcR/CAT-logo.png",
       side: "left"
     },
     {
@@ -94,7 +94,7 @@ function TimelineItem({ experience, index }: { experience: any; index: number })
             >
               <div className="flex items-center justify-end mb-4">
                 <img
-                  src={purdue}
+                  src="https://i.postimg.cc/Jz8g0TcR/CAT-logo.png"
                   alt={`${experience.company} logo`}
                   className="w-12 h-12 rounded-lg mr-4 object-cover"
                 />
