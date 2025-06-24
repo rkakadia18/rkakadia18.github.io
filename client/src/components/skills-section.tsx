@@ -8,35 +8,47 @@ export function SkillsSection() {
 
   const skillsData = [
     {
-      category: "Data Tools",
-      skills: ["Python", "R", "SQL", "Pandas", "NumPy"]
+      category: "Visualizations & BI",
+      skills: ["Tableau", "PowerBI", "Looker Studio", "Matplotlib", "Seaborn", "SAS", "SimQuick", "EDA"]
     },
     {
-      category: "Modeling",
-      skills: ["Scikit-Learn", "TensorFlow", "PyTorch", "XGBoost"]
+      category: "Programming & Modeling",
+      skills: ["Python", "R", "SQL", "PySpark", "TensorFlow", "HiveQL"]
     },
     {
-      category: "Big Data",
-      skills: ["Spark", "Hadoop", "Kafka", "Databricks"]
+      category: "Big Data & Cloud",
+      skills: ["MongoDB", "BigQuery", "Azure", "AWS", "GCP", "VS Code", "Docker", "Github", "Databricks", "Hadoop"]
     },
     {
-      category: "ERP/CRM",
-      skills: ["Salesforce", "SAP", "Tableau", "Power BI"]
+      category: "Business CRM & ERP",
+      skills: ["Excel (@Risk, Solver, VBA, PivotTables)", "JIRA", "Project management", "A/B Testing", "Hypothesis Testing"]
     }
   ];
 
   const certificationsData = [
     {
-      title: "AWS Certified Data Analytics",
-      issuer: "Amazon Web Services"
+      title: "AWS Certified Cloud Practitioner",
+      issuer: "Amazon Web Services",
+      url: "https://www.credly.com/badges/77c327a0-81d6-4f32-8035-ccac66321445/linked_in_profile"
     },
     {
-      title: "Google Cloud Professional Data Engineer",
-      issuer: "Google Cloud"
+      title: "Tableau Desktop Specialist",
+      issuer: "Tableau",
+      url: "https://www.credly.com/badges/e63d4ba5-c63a-4a92-9627-9d55fd3d2cd3/linked_in_profile"
     },
     {
-      title: "Microsoft Azure Data Scientist Associate",
-      issuer: "Microsoft"
+      title: "Microsoft Certified Azure Fundamentals",
+      issuer: "Microsoft",
+      url: "https://learn.microsoft.com/en-us/users/kakadiarupalivinod-4499/transcript/vmpjnf3joroqlk6"
+    },
+    {
+      title: "Microsoft Certified Azure AI Fundamentals",
+      issuer: "Microsoft",
+      url: "https://www.credly.com/badges/f832999f-69ab-4bc8-b13c-8113c36c3ea6/linked_in_profile"
+    },
+    {
+      title: "Associate Certified Analytical Professional",
+      issuer: "Institute for Operations Research and the Management Sciences (INFORMS)"
     }
   ];
 
@@ -114,7 +126,17 @@ export function SkillsSection() {
                   <h3 className="font-semibold mb-2 text-yellow-400 dark:text-yellow-400">
                     {cert.title}
                   </h3>
-                  <p className="text-sm opacity-75">{cert.issuer}</p>
+                  <p className="text-sm opacity-75 mb-4">{cert.issuer}</p>
+                  {cert.url && (
+                    <Button
+                      onClick={() => window.open(cert.url, '_blank')}
+                      variant="outline"
+                      size="sm"
+                      className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 border-yellow-400 hover:border-yellow-500"
+                    >
+                      View Certificate
+                    </Button>
+                  )}
                 </motion.div>
               ))}
             </div>
