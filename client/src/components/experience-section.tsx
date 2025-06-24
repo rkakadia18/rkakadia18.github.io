@@ -10,7 +10,7 @@ export function ExperienceSection() {
       company: "Tesla",
       location: "Austin, TX",
       date: "2023 Spring",
-      description: "Optimised Tesla Transportation Network focused on Ocean Transport",
+      description: "Cleaned and transformed large-scale financial data from Compustat using Python to support capital structure research. Digged into how companies make real-world decisions about debt and financing.",
       logo: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=50&h=50",
       side: "left"
     },
@@ -70,7 +70,6 @@ function TimelineItem({ experience, index }: { experience: any; index: number })
     >
       {/* Timeline dot */}
       <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-yellow-400 border-4 border-background dark:bg-yellow-400 dark:border-background z-10" />
-
       {experience.side === "left" ? (
         <>
           <div className="w-1/2 pr-8 text-right">
@@ -93,7 +92,7 @@ function TimelineItem({ experience, index }: { experience: any; index: number })
                   <p className="opacity-75">{experience.company}</p>
                 </div>
               </div>
-              <p className="mb-4 theme-transition">{experience.description}</p>
+              <p className="mb-4 theme-transition text-center">{experience.description}</p>
               <div className="flex items-center justify-end text-sm opacity-75 space-x-4">
                 <div className="flex items-center">
                   <MapPin className="w-4 h-4 mr-1" />
