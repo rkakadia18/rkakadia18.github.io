@@ -6,8 +6,8 @@ export function ExperienceSection() {
   const experiences = [
     {
       id: 1,
-      title: "Logistics Data Analyst Intern",
-      company: "Tesla",
+      title: "Research Assistant",
+      company: "Purdue University",
       location: "West Lafayette, IN",
       date: "August 2024 - Now",
       description: "Cleaned and transformed large-scale financial data from Compustat using Python to support capital structure research. Digged into how companies make real-world decisions about debt and financing.",
