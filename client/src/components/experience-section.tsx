@@ -4,7 +4,7 @@ import { MapPin, Calendar } from "lucide-react";
 
 import purdue from "@assets/purdue.png";
 import wabash from "@assets/wabash.png"; 
-import catLogo from "@assets/CAT-logo.png";
+import catLogo from "@assets/CAT-logo_1750805045851.png";
 
 
 
@@ -17,7 +17,7 @@ export function ExperienceSection() {
       location: "West Lafayette, IN",
       date: "August 2024 - Now",
       description: "Cleaned and transformed large-scale financial data from Compustat using Python to support capital structure research. Digged into how companies make real-world decisions about debt and financing.",
-      logo: "https://i.postimg.cc/WpJfnR52/purdue.png",
+      logo: purdue,
       side: "left"
     },
     {
@@ -27,7 +27,7 @@ export function ExperienceSection() {
       location: "West Lafayette, IN",
       date: "Jan 2025 - May 2025",
       description: "Built a data-driven forecasting model that improved trailer placement accuracy across 30 cities and boosted efficiency by 18%. Optimized the relocation of 360 trailers, minimizing total travel distance to 7,500 miles using linear programming. Developed a real-time trailer allocation platform integrating live weather, Google Maps, and telematics data, cutting travel costs by 23%.",
-      logo: "https://i.postimg.cc/jjFZHvNw/wabash.png",
+      logo: wabash,
       side: "right"
     },
     {
@@ -37,7 +37,7 @@ export function ExperienceSection() {
       location: "Peoria, IL",
       date: "2023 Summer",
       description: "Designed monthly Sales Variance reports in Tableau and Excel to track KPIs and analyze budget alignment across regions. Built an interactive Power BI dashboard that automated feedback loops for a training program, improving manager responsiveness by 20%. Supported logistics and reporting for a 500-attendee dealer event, ensuring smooth coordination and cross-functional execution.",
-      logo: "https://i.postimg.cc/Jz8g0TcR/CAT-logo.png",
+      logo: catLogo,
       side: "left"
     },
     {
@@ -47,7 +47,8 @@ export function ExperienceSection() {
       location: "New York, NY",
       date: "2022 Summer",
       description: "Executed go-to-market strategy during global exhibitions, driving a 15% improvement in client relationships and customer service. Developed an automated CRM system using Python and WhatsApp, boosting outreach by 25%. Created a targeted outreach strategy that added 9 new B2B accounts and managed inventory using SAP MM.",
-      logo: "https://i.postimg.cc/2ypGJ60C/kayra.png  ",
+      logo: "https://i.postimg.cc/2ypGJ60C/kayra.png",
+      side: "right"
     }
   ];
 
