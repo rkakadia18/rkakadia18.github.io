@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
-import IMG_7241 from "@assets/IMG_7241.jpg";
+import IMG_7241 from "@assets/IMG_7240.jpg";
 
 export function AboutSection() {
   const [activeTab, setActiveTab] = useState<"professional" | "personal">("professional");
@@ -19,7 +19,7 @@ export function AboutSection() {
     text: [
       "Outside of work, I enjoy adventures, currently I'm working towards my private pilot license. I also blog on Medium about unique business models and economy trends that impact industries. Apart from that, I love playing card/board games, reading, running and watching Bollywood movies"
     ],
-    image: "/attached_assets/IMG_7241_1750797562767.jpg"
+    image: "/attached_assets/IMG_7241_1750798107232.jpg"
   };
 
   const activeContent = activeTab === "professional" ? professionalContent : personalContent;
