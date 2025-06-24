@@ -2,6 +2,8 @@ import { useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { MapPin, Calendar } from "lucide-react";
 
+import purdue from "@assets/purdue.png";
+
 export function ExperienceSection() {
   const experiences = [
     {
@@ -90,7 +92,7 @@ function TimelineItem({ experience, index }: { experience: any; index: number })
             >
               <div className="flex items-center justify-end mb-4">
                 <img
-                  src={experience.logo}
+                  src={purdue}
                   alt={`${experience.company} logo`}
                   className="w-12 h-12 rounded-lg mr-4 object-cover"
                 />
