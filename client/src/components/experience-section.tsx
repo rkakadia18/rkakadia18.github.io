@@ -12,7 +12,7 @@ export function ExperienceSection() {
       date: "August 2024 - Now",
       description: "Cleaned and transformed large-scale financial data from Compustat using Python to support capital structure research. Digged into how companies make real-world decisions about debt and financing.",
       skills: ["Python", "EDA", "Financial Modeling", "Compustat"],
-      logo: "/attached_assets/purdue_1750805573027.png",
+      logo: "https://i.postimg.cc/WpJfnR52/purdue.png",
       side: "left"
     },
     {
