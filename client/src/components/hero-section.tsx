@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import graduationPhoto from "@assets/IMG_6134_1750799026564.jpg";
 import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
@@ -6,7 +7,7 @@ export function HeroSection() {
     <section className="min-h-screen flex items-center justify-center theme-transition bg-background">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <motion.img
-          src="/attached_assets/IMG_6134_1750799026564.jpg"
+          src={graduationPhoto}
           alt="Rupali Kakadia professional headshot"
           className="w-64 h-64 rounded-full mx-auto mb-8 object-cover shadow-2xl"
           initial={{ opacity: 0, scale: 0.5 }}
