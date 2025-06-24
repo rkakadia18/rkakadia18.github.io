@@ -80,7 +80,6 @@ function TimelineItem({ experience, index }: { experience: any; index: number })
     >
       {/* Timeline dot */}
       <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-yellow-400 rounded-full border-4 border-background z-10" />
-      
       {experience.side === "left" ? (
         <>
           <div className="w-1/2 pr-8">
@@ -98,7 +97,7 @@ function TimelineItem({ experience, index }: { experience: any; index: number })
                   <p className="opacity-75">{experience.company}</p>
                 </div>
                 <img
-                  src={experience.logo}
+                  src="https://i.postimg.cc/WpJfnR52/purdue.png"
                   alt={`${experience.company} logo`}
                   className="w-12 h-12 rounded-lg object-cover"
                 />
