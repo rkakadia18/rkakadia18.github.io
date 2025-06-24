@@ -97,7 +97,7 @@ function TimelineItem({ experience, index }: { experience: any; index: number })
                   <p className="opacity-75">{experience.company}</p>
                 </div>
                 <img
-                  src="https://i.postimg.cc/WpJfnR52/purdue.png"
+                  src={experience.logo}
                   alt={`${experience.company} logo`}
                   className="w-12 h-12 rounded-lg object-cover"
                 />
