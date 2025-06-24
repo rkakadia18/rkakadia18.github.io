@@ -39,6 +39,7 @@ export function HeroSection() {
           <Button
             size="lg"
             variant="outline"
+            onClick={() => window.open('https://drive.google.com/file/d/1WHWSQLAuys-yHco1tfi50XVYiXp8zqyz/view?usp=sharing', '_blank')}
             className="px-8 py-4 font-semibold transition-all hover:scale-105 border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-gray-900 dark:border-yellow-400 dark:text-yellow-400 dark:hover:bg-yellow-400 dark:hover:text-gray-900"
           >
             View Resume
