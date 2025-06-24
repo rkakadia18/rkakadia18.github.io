@@ -4,6 +4,8 @@ import { MapPin, Calendar } from "lucide-react";
 
 import purdue from "@assets/purdue.png";
 
+import wabash from "@assets/wabash.png";
+
 export function ExperienceSection() {
   const experiences = [
     {
@@ -130,7 +132,7 @@ function TimelineItem({ experience, index }: { experience: any; index: number })
             >
               <div className="flex items-center mb-4">
                 <img
-                  src={experience.logo}
+                  src={wabash}
                   alt={`${experience.company} logo`}
                   className="w-12 h-12 rounded-lg mr-4 object-cover"
                 />
