@@ -7,6 +7,7 @@ export function EducationSection() {
     {
       id: 1,
       school: "Purdue University",
+      location: "West Lafayette, IN",
       degrees: [
         {
           title: "Master of Science in Business Analytics & Information Management",
@@ -43,9 +44,10 @@ export function EducationSection() {
                 alt={`${edu.school} logo`}
                 className="w-20 h-20 mx-auto mb-6 rounded-full object-cover"
               />
-              <h3 className="text-2xl font-bold mb-6 text-yellow-400 dark:text-yellow-400">
+              <h3 className="text-2xl font-bold mb-2 text-yellow-400 dark:text-yellow-400">
                 {edu.school}
               </h3>
+              <p className="text-sm opacity-75 mb-6">{edu.location}</p>
               
               <div className="space-y-4">
                 {edu.degrees.map((degree, degreeIndex) => (
