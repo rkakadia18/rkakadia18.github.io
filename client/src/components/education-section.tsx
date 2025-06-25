@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 
+import purdue from "@assets/purdue.png";
+
 export function EducationSection() {
   const education = [
     {
@@ -37,7 +39,7 @@ export function EducationSection() {
               className="border rounded-lg p-8 text-center shadow-lg theme-transition bg-card max-w-md"
             >
               <img
-                src={edu.logo}
+                src={purdue}
                 alt={`${edu.school} logo`}
                 className="w-20 h-20 mx-auto mb-6 rounded-full object-cover"
               />
