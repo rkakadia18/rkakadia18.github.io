@@ -23,7 +23,7 @@ export function ExperienceSection() {
       date: "Jan 2025 - May 2025",
       description: "Built a data-driven forecasting model that improved trailer placement accuracy across 30 cities and boosted efficiency by 18%. Optimized the relocation of 360 trailers, minimizing total travel distance to 7,500 miles using linear programming. Developed a real-time trailer allocation platform integrating live weather, Google Maps, and telematics data, cutting travel costs by 23%.",
       skills: ["Python", "Optimization (Pulp)", "Geospatial Analysis", "API Integration", "Forecasting"],
-      logo: "/attached_assets/wabash_1750805607483.png",
+      logo: "https://i.postimg.cc/V6RBZNy0/wabash.png",
       side: "right"
     },
     {
@@ -34,7 +34,7 @@ export function ExperienceSection() {
       date: "2023 Summer",
       description: "Designed monthly Sales Variance reports in Tableau and Excel to track KPIs and analyze budget alignment across regions. Built an interactive Power BI dashboard that automated feedback loops for a training program, improving manager responsiveness by 20%. Supported logistics and reporting for a 500-attendee dealer event, ensuring smooth coordination and cross-functional execution.",
       skills: ["PowerBI", "PowerAutomate", "Excel PivotTables", "Tableau"],
-      logo: "/attached_assets/CAT-logo_1750805658397.png",
+      logo: "https://i.postimg.cc/4xD5mMby/CAT-logo.png",
       side: "left"
     },
     {
@@ -45,7 +45,7 @@ export function ExperienceSection() {
       date: "2022 Summer",
       description: "Executed go-to-market strategy during global exhibitions, driving a 15% improvement in client relationships and customer service. Developed an automated CRM system using Python and WhatsApp, boosting outreach by 25%. Created a targeted outreach strategy that added 9 new B2B accounts and managed inventory using SAP MM.",
       skills: ["SAP", "Python", "CRM"],
-      logo: "/attached_assets/kayra.png",
+      logo: "https://i.postimg.cc/7ht1DQZx/kayra.png",
       side: "right"
     }
   ];

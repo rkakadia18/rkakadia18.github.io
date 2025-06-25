@@ -2,8 +2,11 @@ import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
+import { useState } from "react";
 
 export function ProjectsSection() {
+  const [showAll, setShowAll] = useState(false);
+  
   const projects = [
     {
       id: 1,
@@ -95,6 +98,8 @@ export function ProjectsSection() {
     }
   ];
 
+  const visibleProjects = showAll ? projects : projects.slice(0, 6);
+
   return (
     <section id="projects" className="py-20 theme-transition bg-background">
       <div className="max-w-7xl mx-auto px-6">
@@ -106,7 +111,7 @@ export function ProjectsSection() {
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {visibleProjects.map((project, index) => (
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 50 }}
@@ -154,6 +159,39 @@ export function ProjectsSection() {
             </motion.div>
           ))}
         </div>
+
+        {!showAll && projects.length > 6 && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="flex justify-center mt-12"
+          >
+            <Button
+              onClick={() => setShowAll(true)}
+              size="lg"
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
+            >
+              View More Projects ({projects.length - 6} more)
+            </Button>
+          </motion.div>
+        )}
+
+        {showAll && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="flex justify-center mt-12"
+          >
+            <Button
+              onClick={() => setShowAll(false)}
+              variant="outline"
+              size="lg"
+              className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black font-semibold px-8 py-3 rounded-lg transition-all duration-300"
+            >
+              Show Less
+            </Button>
+          </motion.div>
+        )}
       </div>
     </section>
   );
