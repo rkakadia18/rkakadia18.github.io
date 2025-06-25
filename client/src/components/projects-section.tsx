@@ -89,7 +89,7 @@ export function ProjectsSection() {
       id: 11,
       title: "Location Analysis for Subway using SQL",
       description: "Conducted a data-driven location analysis for Subway's new store in Virginia amusement parks using foot traffic, youth demographics, income distribution, and restaurant competition data. Recommended Loudoun County as the optimal location based on weighted scoring analysis.",
-      image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
+      image: "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
       tags: ["SQL", "Big Query", "Location Analytics", "Weighted Scoring", "Business Intelligence"],
       link: "https://github.com/rkakadia18/Location-Analysis-for-Subway-using-SQL"
     }
