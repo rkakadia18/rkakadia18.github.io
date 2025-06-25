@@ -111,7 +111,7 @@ function TimelineItem({ experience, index }: { experience: any; index: number })
                 {experience.skills.map((skill: string, index: number) => (
                   <span
                     key={index}
-                    className="px-3 py-1 bg-yellow-400/20 text-yellow-400 rounded-full text-sm font-medium border border-yellow-400/30"
+                    className="px-3 py-1 bg-yellow-400/20 text-yellow-600 dark:text-yellow-400 rounded-full text-sm font-medium border border-yellow-400/30"
                   >
                     {skill}
                   </span>
@@ -159,7 +159,7 @@ function TimelineItem({ experience, index }: { experience: any; index: number })
                 {experience.skills.map((skill: string, index: number) => (
                   <span
                     key={index}
-                    className="px-3 py-1 bg-yellow-400/20 text-yellow-400 rounded-full text-sm font-medium border border-yellow-400/30"
+                    className="px-3 py-1 bg-yellow-400/20 text-yellow-600 dark:text-yellow-400 rounded-full text-sm font-medium border border-yellow-400/30"
                   >
                     {skill}
                   </span>
