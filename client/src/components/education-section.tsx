@@ -8,7 +8,7 @@ export function EducationSection() {
       degrees: [
         {
           title: "Master of Science in Business Analytics & Information Management",
-          period: "2023 - 2024"
+          period: "2024 - 2025"
         },
         {
           title: "Bachelor of Science in Supply Chain Information Analytics",
