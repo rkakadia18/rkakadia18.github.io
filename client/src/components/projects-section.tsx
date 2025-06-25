@@ -45,6 +45,7 @@ export function ProjectsSection() {
       title: "Energy Investments Optimization",
       description: "An optimization project for Vermont City Electric focused on prioritizing energy-saving programs under an $800,000 budget. Developed a mixed-integer model to select cost-effective, low-carbon initiatives like smart lighting, retrofits, and renewable energy incentives. Balanced financial limits with sustainability goals, creating a data-backed investment plan that reduced both costs and carbon emissions.",
       image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
+      tags: ["Mixed-Integer Programming", "Budget Optimization", "Energy Analytics", "Sustainability", "Cost-Benefit Analysis"]
     }
   ];
 
