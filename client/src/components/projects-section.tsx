@@ -106,9 +106,7 @@ export function ProjectsSection() {
         <h2 className="text-4xl font-bold text-center mb-8 text-yellow-400 dark:text-yellow-400">
           Projects
         </h2>
-        <p className="text-center mb-16 text-lg opacity-80 max-w-3xl mx-auto theme-transition">
-          A comprehensive collection of my analytics and data science projects showcasing technical skills and problem-solving approach across various domains.
-        </p>
+        <p className="text-center mb-16 text-lg opacity-80 max-w-3xl mx-auto theme-transition">A  collection of my analytics and data science projects showcasing technical skills and problem-solving approach across various domains.</p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {visibleProjects.map((project, index) => (
