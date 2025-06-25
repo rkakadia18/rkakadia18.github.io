@@ -17,10 +17,10 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-8">
-            <div className="text-2xl font-bold text-yellow-400">
+            <div className="text-2xl font-bold text-yellow-600 dark:text-yellow-400">
               RK
             </div>
-            <div className="hidden md:flex space-x-6 text-yellow-400">
+            <div className="hidden md:flex space-x-6 text-yellow-600 dark:text-yellow-400">
               <button
                 onClick={() => scrollToSection("about")}
                 className="hover:opacity-80 transition-opacity"
