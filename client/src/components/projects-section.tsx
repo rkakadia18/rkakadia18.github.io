@@ -7,38 +7,44 @@ export function ProjectsSection() {
   const projects = [
     {
       id: 1,
-      title: "LLM Analytics and Evaluation",
-      description: "Evaluation of Large Language Model generations by hallucination detection, topic modeling, sentiment analysis",
+      title: "Balancing Trailer Pool Network",
+      description: "An analytical project that used demand forecasting, location data, and telematics to improve trailer placement across cities. Focused on cutting repositioning costs, reducing idle equipment, and making sure trailers were always available where demand was highest. Combined data analysis, geospatial mapping, and cost optimization to support smarter, more efficient trailer moves.",
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
-      tags: ["Python", "OpenAI API", "LangChain", "NLTK", "Scikit-Learn", "Transformers", "LLM", "Patronus"]
+      tags: ["Python", "Google OR Tools", "API", "Telematics", "Optimization", "Pulp", "Folium", "Forecasting"]
     },
     {
       id: 2,
-      title: "Music & Mental Health",
-      description: "Analyzed relationship between music listening habits and mental health indicators using machine learning",
+      title: "Plant Disease Detection",
+      description: "Developed a plant disease detection model using convolutional neural networks (CNN) to classify leaf images into healthy or diseased categories. Incorporated confidence-based filtering to flag uncertain predictions as 'unknown' for safer decision-making.Deployed a lightweight, web-accessible tool for real-time detection",
       image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
-      tags: ["Python", "Scikit-learn", "TensorFlow", "Databricks", "Spark", "ML", "Data Processing"]
+      tags: ["Image Classification", "CNN", "Python (Keras, TensorFlow, OpenCV)", "Web Deployment (Flask, HTML, JavaScript)", "Model Evaluation (Precision, Recall, Confidence Scores)"]
     },
     {
       id: 3,
-      title: "E-Commerce Analytics",
-      description: "Deep analysis of Brazilian E-Commerce data to uncover sales patterns, customer behavior, and logistics insights",
+      title: "A/B Testing Panera Bread Marketing Campaign",
+      description: "A digital marketing project that used A/B testing with Google Ads and Google Analytics to evaluate campaign performance. Focused on improving ad engagement through color psychology and health-focused imagery, achieving a 5.37% click-through rate and uncovering key patterns in consumer behavior.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
-      tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Jupyter", "Data Analysis", "Visualization"]
+      tags: ["A/B Testing", "Consumer Behavious", "Google Ads", "Digital Marketing"]
     },
     {
       id: 4,
-      title: "Supply Chain Optimization",
-      description: "Developed optimization algorithms for warehouse operations and transportation routing using operations research techniques",
+      title: "Bankruptcy Prediction Modelling",
+      description: "A data mining project that analyzed financial data from 8,000 firms to predict bankruptcy risk. Used advanced models like logistic regression, gradient boosting, and neural networks, achieving 94% accuracy on the validation set.",
       image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
-      tags: ["Python", "OR-Tools", "NetworkX", "Optimization", "Operations Research", "Logistics"]
+      tags: ["SAS Enterprise Miner", "Gradient Boosting", "Ensemble Models", "Neural Networks", "Regression", "Decision Trees", "Feature Engineering"]
     },
     {
       id: 5,
-      title: "Predictive Maintenance System",
-      description: "Built machine learning models to predict equipment failures and optimize maintenance schedules using IoT sensor data",
+      title: "Disaster Tweets Classification with NLP (Text Classification)",
+      description: "Built machine learning models to classify disaster related tweets using a Bert, Distilbert and LSTM models to achieve an accuracy of 82% on the test data.",
       image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
-      tags: ["Python", "TensorFlow", "Time Series", "IoT", "Anomaly Detection", "Deep Learning"]
+      tags: ["Natural Language Processing (NLP)", "Transformer Models", "Tokenization", "LSTM","TensorFlow", "Keras"]
+    },
+    {
+      id: 6,
+      title: "Energy Investments Optimization",
+      description: "An optimization project for Vermont City Electric focused on prioritizing energy-saving programs under an $800,000 budget. Developed a mixed-integer model to select cost-effective, low-carbon initiatives like smart lighting, retrofits, and renewable energy incentives. Balanced financial limits with sustainability goals, creating a data-backed investment plan that reduced both costs and carbon emissions.",
+      image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
     }
   ];
 
