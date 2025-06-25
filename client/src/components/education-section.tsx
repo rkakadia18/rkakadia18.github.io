@@ -4,19 +4,18 @@ export function EducationSection() {
   const education = [
     {
       id: 1,
-      degree: "Master of Science in Data Science",
-      school: "University of Washington",
-      period: "2022 - 2024",
-      focus: "Machine Learning, Statistics, Data Mining",
-      logo: "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100"
-    },
-    {
-      id: 2,
-      degree: "Bachelor of Engineering",
-      school: "Mumbai University",
-      period: "2018 - 2022",
-      focus: "Computer Science, Mathematics",
-      logo: "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100"
+      school: "Purdue University",
+      degrees: [
+        {
+          title: "Master of Science in Business Analytics & Information Management",
+          period: "2023 - 2024"
+        },
+        {
+          title: "Bachelor of Science in Supply Chain Information Analytics",
+          period: "2019 - 2023"
+        }
+      ],
+      logo: "/attached_assets/purdue_1750805573027.png"
     }
   ];
 
@@ -27,7 +26,7 @@ export function EducationSection() {
           Education
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="flex justify-center">
           {education.map((edu, index) => (
             <motion.div
               key={edu.id}
@@ -35,19 +34,27 @@ export function EducationSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="border rounded-lg p-8 text-center shadow-lg theme-transition bg-card"
+              className="border rounded-lg p-8 text-center shadow-lg theme-transition bg-card max-w-md"
             >
               <img
                 src={edu.logo}
                 alt={`${edu.school} logo`}
-                className="w-20 h-20 mx-auto mb-4 rounded-full object-cover"
+                className="w-20 h-20 mx-auto mb-6 rounded-full object-cover"
               />
-              <h3 className="text-xl font-semibold mb-2 text-yellow-400 dark:text-yellow-400">
-                {edu.degree}
+              <h3 className="text-2xl font-bold mb-6 text-yellow-400 dark:text-yellow-400">
+                {edu.school}
               </h3>
-              <p className="opacity-75 mb-2">{edu.school}</p>
-              <p className="text-sm opacity-60 mb-4">{edu.period}</p>
-              <p className="text-sm opacity-75">Focus: {edu.focus}</p>
+              
+              <div className="space-y-4">
+                {edu.degrees.map((degree, degreeIndex) => (
+                  <div key={degreeIndex} className="text-left">
+                    <h4 className="text-lg font-semibold mb-1 text-foreground">
+                      {degree.title}
+                    </h4>
+                    <p className="text-sm opacity-60">{degree.period}</p>
+                  </div>
+                ))}
+              </div>
             </motion.div>
           ))}
         </div>
