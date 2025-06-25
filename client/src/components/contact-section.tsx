@@ -9,9 +9,7 @@ export function ContactSection() {
         <h2 className="text-4xl font-bold mb-8 text-yellow-400 dark:text-yellow-400">
           Let's Connect
         </h2>
-        <p className="text-lg mb-12 opacity-80 theme-transition">
-          I'm always open to discussing new opportunities, collaborations, or just having a chat about data science!
-        </p>
+        <p className="text-lg mb-12 opacity-80 theme-transition">If you’re into problem solving, card games, Cessnas, or just here for a good conversation — let’s chat!</p>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
