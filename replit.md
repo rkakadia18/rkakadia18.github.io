@@ -96,7 +96,8 @@ This is a personal portfolio website for Rupali Kakadia, a data scientist with e
 
 ```
 Changelog:
-- June 24, 2025. Initial setup
+- June 25, 2025: Applied deployment fixes including production environment configuration, session management, health check endpoints, error handling, and production startup script
+- June 24, 2025: Initial setup
 ```
 
 ## User Preferences
