@@ -9,7 +9,7 @@ export function ProjectsSection() {
       id: 1,
       title: "Balancing Trailer Pool Network",
       description: "An analytical project that used demand forecasting, location data, and telematics to improve trailer placement across cities. Focused on cutting repositioning costs, reducing idle equipment, and making sure trailers were always available where demand was highest. Combined data analysis, geospatial mapping, and cost optimization to support smarter, more efficient trailer moves.",
-      image: "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
+      image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
       tags: ["Python", "Google OR Tools", "API", "Telematics", "Optimization", "Pulp", "Folium", "Forecasting"],
       link: "https://github.com/rkakadia18/Balancing-Trailer-Pool-Network"
     },
@@ -17,7 +17,7 @@ export function ProjectsSection() {
       id: 2,
       title: "Plant Disease Detection",
       description: "Developed a plant disease detection model using convolutional neural networks (CNN) to classify leaf images into healthy or diseased categories. Incorporated confidence-based filtering to flag uncertain predictions as 'unknown' for safer decision-making. Deployed a lightweight, web-accessible tool for real-time detection.",
-      image: "https://images.unsplash.com/photo-1574263867128-c8bb547ff88b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
+      image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
       tags: ["Image Classification", "CNN", "Python", "Keras", "TensorFlow", "OpenCV", "Flask"],
       link: "https://github.com/rkakadia18/Plant-Disease-Detection-Model"
     },
@@ -41,7 +41,7 @@ export function ProjectsSection() {
       id: 5,
       title: "Disaster Tweets Classification with NLP",
       description: "Built machine learning models to classify disaster related tweets using BERT, DistilBERT and LSTM models to achieve an accuracy of 82% on the test data.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
+      image: "https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
       tags: ["Natural Language Processing", "Transformer Models", "BERT", "LSTM", "TensorFlow", "Keras"],
       link: "https://github.com/rkakadia18/Disaster-Tweets-Classification-with-NLP-Text-Classification-"
     },
@@ -57,7 +57,7 @@ export function ProjectsSection() {
       id: 7,
       title: "Fish Production Planning",
       description: "Developed an optimization model for fish production planning to maximize profitability while considering resource constraints, seasonal demand, and production capacity limitations.",
-      image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
+      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
       tags: ["Production Planning", "Linear Programming", "Resource Optimization", "Supply Chain"],
       link: "https://github.com/rkakadia18/Fish-Production-Planning"
     },
@@ -73,7 +73,7 @@ export function ProjectsSection() {
       id: 9,
       title: "Supermarket Sales Analysis Using Python",
       description: "Comprehensive analysis of supermarket sales data using Python to identify trends, customer behavior patterns, and revenue optimization opportunities through data visualization and statistical analysis.",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
+      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
       tags: ["Data Analysis", "Python", "Pandas", "Matplotlib", "Sales Analytics", "Business Intelligence"],
       link: "https://github.com/rkakadia18/Supermarket-Sales-Analysis-Using-Python"
     },
@@ -81,7 +81,7 @@ export function ProjectsSection() {
       id: 10,
       title: "Predicting Diabetes Risk Using Big Data & Machine Learning",
       description: "Developed predictive models using big data techniques and machine learning algorithms to assess diabetes risk factors and provide early detection capabilities for healthcare applications.",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
+      image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
       tags: ["Healthcare Analytics", "Machine Learning", "Big Data", "Predictive Modeling", "Python"],
       link: "https://github.com/rkakadia18/Predicting-Diabetes-Risk-Using-Big-Data-Machine-Learning"
     },
@@ -89,7 +89,7 @@ export function ProjectsSection() {
       id: 11,
       title: "Location Analysis for Subway using SQL",
       description: "Conducted a data-driven location analysis for Subway's new store in Virginia amusement parks using foot traffic, youth demographics, income distribution, and restaurant competition data. Recommended Loudoun County as the optimal location based on weighted scoring analysis.",
-      image: "https://images.unsplash.com/photo-1562577309-2592ab84b1bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
+      image: "https://images.unsplash.com/photo-1555992336-03a23c7a21dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
       tags: ["SQL", "Big Query", "Location Analytics", "Weighted Scoring", "Business Intelligence"],
       link: "https://github.com/rkakadia18/Location-Analysis-for-Subway-using-SQL"
     }
