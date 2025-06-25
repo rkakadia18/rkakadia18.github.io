@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin, Github, FileText } from "lucide-react";
 
 export function ContactSection() {
   return (
@@ -24,7 +24,7 @@ export function ContactSection() {
             className="flex items-center space-x-2 px-6 py-3 hover:scale-105 transition-transform theme-transition"
             asChild
           >
-            <a href="mailto:rupali@example.com">
+            <a href="mailto:kakadiarupa@gmail.com">
               <Mail className="w-5 h-5" />
               <span>Email</span>
             </a>
@@ -36,7 +36,7 @@ export function ContactSection() {
             className="flex items-center space-x-2 px-6 py-3 hover:scale-105 transition-transform theme-transition"
             asChild
           >
-            <a href="https://linkedin.com/in/rupali-kakadia" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/rupalikakadia/" target="_blank" rel="noopener noreferrer">
               <Linkedin className="w-5 h-5" />
               <span>LinkedIn</span>
             </a>
@@ -48,9 +48,21 @@ export function ContactSection() {
             className="flex items-center space-x-2 px-6 py-3 hover:scale-105 transition-transform theme-transition"
             asChild
           >
-            <a href="https://github.com/rupali-kakadia" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/rkakadia18" target="_blank" rel="noopener noreferrer">
               <Github className="w-5 h-5" />
               <span>GitHub</span>
+            </a>
+          </Button>
+
+          <Button
+            variant="outline"
+            size="lg"
+            className="flex items-center space-x-2 px-6 py-3 hover:scale-105 transition-transform theme-transition"
+            asChild
+          >
+            <a href="https://medium.com/@kakadiarupa" target="_blank" rel="noopener noreferrer">
+              <FileText className="w-5 h-5" />
+              <span>Medium</span>
             </a>
           </Button>
         </motion.div>
